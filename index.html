@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abhay Navale — Software Engineer</title>
+  <meta name="description" content="Abhay Navale — .NET Core & Angular developer. Portfolio & contact." />
+  <style>
+    :root{--accent:#0b69ff;--muted:#6b7280;--bg:#0f1724;--card:#0b1220}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.45;margin:0;color:#e6eef8;background:linear-gradient(180deg,#041426 0%,#07121b 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:900px;margin:40px auto;padding:24px}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6C5CE7);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:22px}
+    h2{font-size:14px;margin:10px 0;color:var(--muted)}
+    .lead{margin-top:12px;color:#cfe7ff}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:22px}
+    .card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .badge{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:13px;color:#d8eefc;border:1px solid rgba(255,255,255,0.03)}
+    .section-title{font-weight:600;margin-bottom:8px}
+    ul{padding-left:18px;margin:8px 0}
+    .project{margin-bottom:12px}
+    .small{font-size:13px;color:var(--muted)}
+    .contact a{color:var(--accent);text-decoration:none}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.container{padding:18px;margin:18px}}
+    .cta{display:inline-block;margin-top:12px;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#7b61ff);color:white;text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">AN</div>
+      <div>
+        <h1>Abhay Navale</h1>
+        <div class="small">Software Engineer — .NET Core & Angular</div>
+        <div class="small">Pune, Maharashtra · Open to remote</div>
+        <div style="margin-top:8px" class="contact">
+          <a href="mailto:navale.abhay12@gmail.com">navale.abhay12@gmail.com</a> · <span class="small">+91-9075966080</span>
+          <div style="margin-top:6px">
+            <a href="https://github.com/NavaleAbhay" target="_blank">github.com/NavaleAbhay</a> ·
+            <a href="https://linkedin.com/in/navale-abhay" target="_blank">linkedin.com/in/navale-abhay</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <p class="lead">Full-stack .NET and Angular developer with ~2 years' experience building scalable APIs, Windows Services, and responsive web apps. Delivered multi-tenant auth gateways, real-time punch sync (pub/sub), and performance improvements through EF Core and SQL tuning.</p>
+
+    <div class="grid">
+      <main>
+        <div class="card">
+          <div class="section-title">Experience (Selected)</div>
+          <div style="margin-bottom:10px">
+            <strong>Software Engineer — Emsphere Technologies</strong>
+            <div class="small">Nov 2023 – Present · Pune</div>
+            <ul>
+              <li>Built ASP.NET Core Web APIs & Windows Services; improved API response times and reliability.</li>
+              <li>Engineered a pub/sub Windows Service to sync attendance data (high throughput, low latency).</li>
+              <li>Delivered a multi-tenant authentication gateway (JWT + dynamic routing) for client isolation.</li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom:10px">
+            <strong>Intern — Transflower Learning Pvt. Ltd.</strong>
+            <div class="small">Nov 2022 – Nov 2023 · Pune</div>
+            <ul>
+              <li>Built features using .NET Core Web API, Angular and MySQL; maintained 0 defect leakage across sprints.</li>
+            </ul>
+          </div>
+
+          <div class="section-title">Projects</div>
+          <div class="project">
+            <strong>Contract Labour Management System (CLMS)</strong>
+            <div class="small">ASP.NET MVC · SQL Server · jQuery</div>
+            <div>Core modules: Employee Onboarding, Manpower Planning, and Requisition. Migrated UI components and integrated backend workflows.</div>
+          </div>
+
+          <div class="project">
+            <strong>Authentication Gateway</strong>
+            <div class="small">ASP.NET Core Web API · SQL Server</div>
+            <div>Centralized gateway API with multi-tenant auth and dynamic domain routing for client-specific backends.</div>
+          </div>
+
+          <div class="project">
+            <strong>Real-Time Punch Sync (Pub/Sub)</strong>
+            <div class="small">Windows Service · SQL Server · ADO.NET</div>
+            <div>High-frequency data sync between access controls and client DBs with reliable delivery and throughput optimizations.</div>
+          </div>
+
+          <div class="project">
+            <strong>Shift-Based Email Notification</strong>
+            <div class="small">Windows Service · SMTP · ADO.NET</div>
+            <div>Service to monitor shifts, apply tolerance checks, and send notifications to reduce missed alerts.</div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:12px" class="card">
+          <div class="section-title">Projects / Repository</div>
+          <div class="project">
+            <strong>EAgroServices</strong>
+            <div class="small">.NET Core Web API · Angular · MySQL</div>
+            <div class="small">GitHub: <a href="https://github.com/RaviTambade/EAgroServices" target="_blank">RaviTambade/EAgroServices</a></div>
+          </div>
+        </div>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">Skills</div>
+
+          <div class="small" style="margin-top:6px">Programming Languages</div>
+          <div class="skills">
+            <span class="badge">C#</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">SQL</span>
+          </div>
+
+          <div class="small" style="margin-top:10px">Frameworks & Libraries</div>
+          <div class="skills">
+            <span class="badge">ASP.NET Core</span>
+            <span class="badge">Entity Framework Core</span>
+            <span class="badge">Angular</span>
+            <span class="badge">NestJS</span>
+            <span class="badge">Dexie / IndexedDB</span>
+          </div>
+
+          <div class="small" style="margin-top:10px">Databases</div>
+          <div class="skills">
+            <span class="badge">SQL Server</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">better-sqlite3</span>
+            <span class="badge">IndexedDB</span>
+          </div>
+
+          <div class="small" style="margin-top:10px">Real-time & Messaging</div>
+          <div class="skills">
+            <span class="badge">WebSocket</span>
+            <span class="badge">SignalR</span>
+            <span class="badge">RabbitMQ</span>
+            <span class="badge">gRPC</span>
+            <span class="badge">GraphQL</span>
+          </div>
+
+          <div class="small" style="margin-top:10px">Testing & Tools</div>
+          <div class="skills">
+            <span class="badge">xUnit</span>
+            <span class="badge">NUnit</span>
+            <span class="badge">MSTest</span>
+            <span class="badge">Vitest</span>
+            <span class="badge">Git</span>
+            <span class="badge">Postman</span>
+            <span class="badge">Swagger</span>
+          </div>
+
+          <div style="margin-top:12px">
+            <a class="cta" href="#contact">Contact / Download Resume</a>
+          </div>
+        </div>
+
+        <div style="margin-top:12px" class="card" id="contact">
+          <div class="section-title">Contact</div>
+          <div class="small">Email: <a href="mailto:navale.abhay12@gmail.com">navale.abhay12@gmail.com</a></div>
+          <div class="small">Phone: +91-9075966080</div>
+          <div style="margin-top:8px"><a href="https://github.com/NavaleAbhay" target="_blank">GitHub</a> · <a href="https://linkedin.com/in/navale-abhay" target="_blank">LinkedIn</a></div>
+          <div style="margin-top:10px" class="small">Tip: replace the mail/links above with your final links and upload <strong>index.html</strong> to a free host (GitHub Pages / Netlify / Vercel / Cloudflare Pages).</div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>Designed & built by Abhay Navale — keep this page updated with your latest projects.</footer>
+  </div>
+</body>
+</html>
