@@ -1,243 +1,876 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Abhay Navale — Software Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#060e1f; --panel:#0c1529; --muted:#94a3b8; --accent:#2563eb; --glass:rgba(255,255,255,0.05);
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:#e2e8f0;line-height:1.6}
-    a{color:var(--accent);text-decoration:none}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Abhay Navale — Full Stack .NET & Angular Engineer</title>
+  <meta name="description" content="Portfolio of Abhay Navale, Full Stack .NET Core and Angular Developer with 3+ years of experience architecting high-scale enterprise applications for State Bank of India, Reliance Industries, and Mahindra." />
+  <meta name="keywords" content="Abhay Navale, .NET Core Developer, Angular Developer, C# Engineer, Microservices, SQL Server, State Bank of India HRMS, Enterprise Software" />
+  <meta name="author" content="Abhay Navale" />
 
-    .container{max-width:1200px;margin:0 auto;padding:20px}
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Abhay Navale — Full Stack .NET & Angular Engineer" />
+  <meta property="og:description" content="Architecting high-scale microservices, real-time event pipelines, and modern web applications for enterprise clients." />
+  <meta property="og:url" content="https://navaleabhay.github.io" />
 
-    /* Profile Card */
-    .profile-card{background:linear-gradient(135deg,#1e293b,#0f172a);border-radius:16px;padding:24px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.5);margin-bottom:24px;position:relative;overflow:hidden}
-    .profile-card::before{content:"";position:absolute;top:0;left:0;right:0;height:120px;background:linear-gradient(90deg,var(--accent),#7b61ff);opacity:0.2}
-    .avatar{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#7b61ff);display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:700;color:#fff;margin:0 auto;position:relative;z-index:1}
-    .profile-card h1{margin:12px 0 4px;font-size:26px;position:relative;z-index:1}
-    .profile-card .title{color:var(--muted);font-size:14px;position:relative;z-index:1}
-    .profile-card .contacts{margin-top:14px;font-size:14px;position:relative;z-index:1}
-    .profile-card .contacts div{margin:4px 0}
-    .profile-card .download{display:inline-block;margin-top:14px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7b61ff);color:white;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(37,99,235,0.4)}
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    /* Section */
-    .section{margin-bottom:28px}
-    .section-title{font-size:18px;font-weight:700;margin-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:6px}
-
-    /* Experience */
-    .company{margin-bottom:20px}
-    .company h3{margin:0;font-size:16px}
-    .meta{color:var(--muted);font-size:13px}
-    ul{margin:8px 0 0 18px}
-
-    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:14px}
-    .proj{background:var(--panel);border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.4);transition:transform .2s}
-    .proj:hover{transform:translateY(-6px)}
-    .proj-top{height:120px;background-size:cover;background-position:center}
-    .proj-body{padding:12px}
-    .proj-title{font-weight:700;margin-bottom:4px}
-    .proj-desc{font-size:13px;color:var(--muted)}
-    .proj-tech{margin-top:6px;font-size:12px;color:var(--muted)}
-
-    /* Skills */
-    .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
-    .skill-group{background:var(--panel);padding:14px;border-radius:12px}
-    .skill-group h4{margin:0 0 8px;font-size:14px}
-    .badges{display:flex;flex-wrap:wrap;gap:6px}
-    .badge{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:12px}
-
-    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:30px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.08)}
-  </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <!-- Profile Card -->
-    <div class="profile-card">
-      <div class="avatar">AN</div>
-      <h1>Abhay Navale</h1>
-      <div class="title">Software Engineer - .NET Core & Angular</div>
-      <div class="contacts">
-        <div>📧 <a href="mailto:navale.abhay12@gmail.com">navale.abhay12@gmail.com</a></div>
-        <div>🔗 <a href="https://linkedin.com/in/navale-abhay" target="_blank">LinkedIn</a></div>
-        <div>💻 <a href="https://github.com/NavaleAbhay" target="_blank">GitHub</a></div>
-        <div>☎️ +91-9075966080</div>
-        <div>📍 Pune, India</div>
-      </div>
-      <a class="download" href="AbhayNavale_Resume.pdf" download>Download Resume</a>
-    </div>
 
-        <section class="section">
-      <div class="section-title">Profile</div>
-      <p>
-        Passionate Software Engineer with 2+ years of experience in designing and developing 
-        scalable applications using .NET Core, ASP.NET, Angular, and SQL Server. 
-        Skilled in building real-time systems (WebSocket, SignalR, RabbitMQ) and 
-        optimizing databases for high performance. Strong believer in clean architecture, 
-        SOLID principles, and writing maintainable, testable code.
-      </p>
-    </section>
-
-    <!-- Experience -->
-    <section class="section">
-      <div class="section-title">Experience</div>
-
-      <div class="company">
-        <h3>Emsphere Technologies — Software Engineer</h3>
-        <div class="meta">Nov 2023 – Present · Pune</div>
-        <ul>
-          <li>Designed and maintained scalable APIs and Windows Services for workforce management modules.</li>
-          <li>Engineered real-time sync using pub/sub pattern for attendance data.</li>
-          <li>Delivered multi-tenant authentication gateway with secure JWT and routing logic.</li>
-        </ul>
-
-        <div class="projects">
-          <div class="proj">
-            <div class="proj-top" style="background-image:url('images/clms.webp')"></div>
-            <div class="proj-body">
-              <div class="proj-title">Contract Labour Management System (CLMS)</div>
-              <div class="proj-desc">Comprehensive solution for employee onboarding, manpower planning and requisition workflows.</div>
-              <div class="proj-tech">ASP.NET MVC · SQL Server · jQuery · Bootstrap</div>
-            </div>
-          </div>
-
-          <div class="proj">
-            <div class="proj-top" style="background-image:url('images/authentication.jpeg')"></div>
-            <div class="proj-body">
-              <div class="proj-title">Authentication Gateway</div>
-              <div class="proj-desc">Gateway API for centralized multi-tenant authentication, request redirection, and client isolation.</div>
-              <div class="proj-tech">ASP.NET Core Web API · SQL Server · JWT</div>
-            </div>
-          </div>
-
-          <div class="proj">
-            <div class="proj-top" style="background-image:url('images/punchsync.webp')"></div>
-            <div class="proj-body">
-              <div class="proj-title">Real-Time Punch Sync Service</div>
-              <div class="proj-desc">Windows Service to fetch and sync access control punch records to client DBs in real time.</div>
-              <div class="proj-tech">.NET Framework · SQL Server · Pub/Sub</div>
-            </div>
-          </div>
-
-          <div class="proj">
-            <div class="proj-top" style="background-image:url('images/mail.jpeg')"></div>
-            <div class="proj-body">
-              <div class="proj-title">Shift-Based Email Notification</div>
-              <div class="proj-desc">Service monitoring shift schedules, applying tolerance checks and sending timely notifications.</div>
-              <div class="proj-tech">Windows Service · ADO.NET · SMTP</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="company">
-        <h3>Transflower Learning — Intern</h3>
-        <div class="meta">Nov 2022 – Nov 2023 · Pune</div>
-        <ul>
-          <li>Built full-stack features in .NET Core Web API and Angular with MySQL backend.</li>
-          <li>Developed reusable Angular components and dashboards for role-based workflows.</li>
-        </ul>
-
-        <div class="projects">
-          <div class="proj">
-            <div class="proj-top" style="background-image:url('images/agro2.webp')"></div>
-            <div class="proj-body">
-              <div class="proj-title">EAgroServices</div>
-              <div class="proj-desc">Role-based ERP portal with JWT authentication, dashboards, and workflows for farmers and collection managers.</div>
-              <div class="proj-tech">.NET Core Web API · Angular · MySQL</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section">
-      <div class="section-title">Skills</div>
-      <div class="skills">
-        <div class="skill-group">
-          <h4>Programming Languages</h4>
-          <div class="badges">
-            <span class="badge">C#</span>
-            <span class="badge">TypeScript</span>
-            <span class="badge">JavaScript</span>
-            <span class="badge">SQL</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Frameworks & Libraries</h4>
-          <div class="badges">
-            <span class="badge">ASP.NET Core</span>
-            <span class="badge">Entity Framework Core</span>
-            <span class="badge">Angular (RxJS)</span>
-            <span class="badge">NestJS</span>
-            <span class="badge">Dexie.js / IndexedDB</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Databases</h4>
-          <div class="badges">
-            <span class="badge">SQL Server</span>
-            <span class="badge">MySQL</span>
-            <span class="badge">better-sqlite3</span>
-            <span class="badge">IndexedDB</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Realtime & Messaging</h4>
-          <div class="badges">
-            <span class="badge">WebSocket</span>
-            <span class="badge">SignalR</span>
-            <span class="badge">RabbitMQ</span>
-            <span class="badge">gRPC</span>
-            <span class="badge">GraphQL</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Tools & Testing</h4>
-          <div class="badges">
-            <span class="badge">Git</span>
-            <span class="badge">Postman</span>
-            <span class="badge">Swagger</span>
-            <span class="badge">xUnit</span>
-            <span class="badge">NUnit</span>
-            <span class="badge">MSTest</span>
-            <span class="badge">Vitest</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Concepts</h4>
-          <div class="badges">
-            <span class="badge">REST APIs</span>
-            <span class="badge">Microservices</span>
-            <span class="badge">Pub/Sub Pattern</span>
-            <span class="badge">Authentication & Authorization</span>
-            <span class="badge">Database Optimization</span>
-            <span class="badge">Clean Architecture</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-      <!-- Education -->
-    <section class="section">
-      <div class="section-title">Education</div>
-      <div class="company">
-        <h3>Savitribai Phule Pune University — Bachelor of Computer Science</h3>
-        <div class="meta">June 2019 – April 2022 · Pune, India</div>
-        <ul>
-          <li>Graduated with strong foundation in Computer Science concepts, programming, and databases.</li>
-          <li>Focused on .NET, SQL, and full-stack development practices during academics and projects.</li>
-        </ul>
-      </div>
-    </section>
-    
-    <footer>© 2025 Abhay Navale · Portfolio</footer>
+  <!-- Ambient Dynamic Lighting & Grid -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-grid"></div>
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
   </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <a href="#overview" class="nav-brand" aria-label="Abhay Navale Homepage">
+        <div class="nav-brand-logo">AN</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Abhay Navale</span>
+          <span class="nav-brand-title">Full Stack Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#overview" class="nav-link active">Overview</a></li>
+          <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
+          <li><a href="#architecture" class="nav-link">Architecture</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="status-pill" title="Currently open to high-impact software engineering roles">
+          <span class="status-dot"></span>
+          <span>Open to Roles</span>
+        </div>
+        <a href="AbhayNavale_Resume.pdf" download class="btn-resume" aria-label="Download Abhay Navale Resume PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Résumé</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <a href="#overview">Overview</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="AbhayNavale_Resume.pdf" download class="btn-resume">Download Résumé (PDF)</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="overview">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>Enterprise .NET Core & Angular Specialist</span>
+          </div>
+          <h1 class="hero-title">
+            Architecting <span class="gradient-text">High-Throughput</span> Systems & Enterprise Platforms.
+          </h1>
+          <p class="hero-desc">
+            Full-stack engineer with <strong>3+ years of experience</strong> engineering scalable microservices, secure RESTful APIs, and event-driven architectures. Proven impact delivering core systems for <strong>State Bank of India</strong>, <strong>Reliance Industries</strong>, and <strong>Mahindra & Mahindra</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#case-studies" class="btn-primary">
+              <span>View Case Studies</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="AbhayNavale_Resume.pdf" download class="btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>Download CV</span>
+            </a>
+            <button class="btn-copy-email" data-copy-text="navale.abhay12@gmail.com" title="Click to copy email address">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/navale-abhay" target="_blank" rel="noopener noreferrer" class="hero-social-link">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <span>•</span>
+            <a href="https://github.com/NavaleAbhay" target="_blank" rel="noopener noreferrer" class="hero-social-link">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <span>•</span>
+            <span class="hero-social-link">📍 Pune / Navi Mumbai</span>
+          </div>
+        </div>
+
+        <!-- Hero Terminal Card -->
+        <div class="terminal-card reveal delay-1">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <div class="terminal-title">AbhayNavale.Enterprise.cs</div>
+            <div style="font-size:0.7rem; color:var(--accent-emerald);">● READY</div>
+          </div>
+          <div class="terminal-body">
+            <p><span class="code-comment">// Production Architecture Profile</span></p>
+            <p>
+              <span class="code-keyword">namespace</span> <span class="code-type">Enterprise.Fintech</span><br/>
+              {<br/>
+              &nbsp;&nbsp;<span class="code-keyword">public class</span> <span class="code-type">SystemSpecs</span><br/>
+              &nbsp;&nbsp;{<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">public long</span> ActiveEmployees => <span class="code-number">100_000</span>; <span class="code-comment">// State Bank of India</span><br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">public double</span> QuerySpeedup => <span class="code-number">0.40</span>; <span class="code-comment">// -40% query latency</span><br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">public string</span> AuditFindings => <span class="code-string">"Zero Repeat Critical"</span>;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">public string[]</span> CoreStack => <span class="code-keyword">new</span>[] {<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">".NET 8 / C#"</span>, <span class="code-string">"Angular / RxJS"</span>,<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"SQL Server"</span>, <span class="code-string">"Microservices"</span><br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;};<br/>
+              &nbsp;&nbsp;}<br/>
+              }
+            </p>
+
+            <div class="terminal-metrics-box">
+              <div>
+                <div class="t-metric-label">Status Check</div>
+                <div class="t-metric-value" style="color:var(--accent-emerald);">100% Pass</div>
+              </div>
+              <div>
+                <div class="t-metric-label">Architecture</div>
+                <div class="t-metric-value">Clean & Event-Driven</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof of Scale Strip -->
+    <section class="proof-strip container reveal">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="100000">0</span>
+            <span class="stat-unit">+</span>
+          </div>
+          <div class="stat-label">Enterprise Employees</div>
+          <div class="stat-subtext">Digitized for State Bank of India (HRMS)</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="3000">0</span>
+            <span class="stat-unit">/mo</span>
+          </div>
+          <div class="stat-label">Loans Processed</div>
+          <div class="stat-subtext">Automated multi-level digital approvals</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="40">0</span>
+            <span class="stat-unit">%</span>
+          </div>
+          <div class="stat-label">Faster SQL Queries</div>
+          <div class="stat-subtext">Slashing reporting delays from ~5s to ~3s</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="0">0</span>
+            <span class="stat-unit">Repeat</span>
+          </div>
+          <div class="stat-label">ISD Security Findings</div>
+          <div class="stat-subtext">Bank-grade end-to-end payload encryption</div>
+        </div>
+      </div>
+
+      <!-- Enterprise Client Trust Strip -->
+      <div class="clients-bar">
+        <div class="clients-bar-label">Enterprise Solutions Delivered For</div>
+        <div class="clients-list">
+          <div class="client-item"><span class="dot"></span> State Bank of India (SBI)</div>
+          <div class="client-item"><span class="dot"></span> Reliance Industries Limited</div>
+          <div class="client-item"><span class="dot"></span> Mahindra & Mahindra</div>
+          <div class="client-item"><span class="dot"></span> Nayara Energy</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Case Studies -->
+    <section class="section container" id="case-studies">
+      <div class="section-header reveal">
+        <div class="section-tag">High-Impact Engineering</div>
+        <h2 class="section-title">Flagship Enterprise Case Studies</h2>
+        <p class="section-subtitle">
+          Real-world, mission-critical systems designed from the ground up to solve complex enterprise bottlenecks.
+        </p>
+      </div>
+
+      <div class="case-studies-list">
+        <!-- Case Study 1: SBI HRMS Loan Management -->
+        <article class="case-card reveal">
+          <div class="case-card-body">
+            <div class="case-card-header">
+              <span class="case-org-badge">Webito Infotech • Banking Sector</span>
+              <span class="case-time-badge">Nov 2025 – Present</span>
+            </div>
+            <h3 class="case-title">State Bank of India: Loan Lifecycle & Employee Management Engine</h3>
+            <p class="case-desc">
+              Architected a mission-critical Loan Management and Employee Life Cycle microservice from the ground up for State Bank of India (HRMS Dept). Replaced a manual, paper-based workflow with an automated multi-level approval pipeline.
+            </p>
+
+            <div class="case-metrics-row">
+              <div class="metric-chip">
+                <span class="metric-chip-val">1 Lakh+</span>
+                <span class="metric-chip-lbl">Workforce Covered</span>
+              </div>
+              <div class="metric-chip">
+                <span class="metric-chip-val">~30%</span>
+                <span class="metric-chip-lbl">Turnaround Reduction</span>
+              </div>
+              <div class="metric-chip">
+                <span class="metric-chip-val">Zero</span>
+                <span class="metric-chip-lbl">ISD Audit Defects</span>
+              </div>
+            </div>
+
+            <ul class="case-highlights-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Engineered RESTful API integrations connecting internal loan workflows to external review systems, cutting turnaround by ~30%.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Hardened API data security handling sensitive employee records, passing Information Security Department (ISD) audits with zero repeat critical findings.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Optimized SQL Server query performance, slashing execution times by 40% (from ~5s to ~3s on key high-volume reports).</span>
+              </li>
+            </ul>
+
+            <div class="tech-tags">
+              <span class="tech-tag">.NET Core</span>
+              <span class="tech-tag">Microservices</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">AES Encryption</span>
+              <span class="tech-tag">T-SQL Stored Procedures</span>
+              <span class="tech-tag">RESTful APIs</span>
+            </div>
+          </div>
+          <div class="case-card-visual">
+            <img src="images/sbi_banking_dashboard.jpg" alt="State Bank of India HRMS Loan Management Dashboard UI" class="case-visual-img" loading="lazy" width="1280" height="720" />
+            <div class="visual-overlay"></div>
+          </div>
+        </article>
+
+        <!-- Case Study 2: Centralized Authentication Gateway -->
+        <article class="case-card reveal delay-1">
+          <div class="case-card-body">
+            <div class="case-card-header">
+              <span class="case-org-badge">Emsphere Technologies • Multi-Tenant</span>
+              <span class="case-time-badge">Clients: Mahindra & Nayara</span>
+            </div>
+            <h3 class="case-title">Centralized Multi-Tenant Authentication & Dynamic Routing Gateway</h3>
+            <p class="case-desc">
+              Engineered a high-performance Authentication Gateway in .NET Core powering a single unified mobile application for 10+ enterprise clients, guaranteeing absolute client data isolation and dynamic server redirection.
+            </p>
+
+            <div class="case-metrics-row">
+              <div class="metric-chip">
+                <span class="metric-chip-val">10+</span>
+                <span class="metric-chip-lbl">Enterprise Tenants</span>
+              </div>
+              <div class="metric-chip">
+                <span class="metric-chip-val">Single</span>
+                <span class="metric-chip-lbl">Unified App Codebase</span>
+              </div>
+              <div class="metric-chip">
+                <span class="metric-chip-val">100%</span>
+                <span class="metric-chip-lbl">Tenant Data Isolation</span>
+              </div>
+            </div>
+
+            <ul class="case-highlights-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Validates users via company code and secure credentials, dynamically redirecting each client from a shared centralized routing DB to dedicated backend servers.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Implemented token-based JWT authentication with decoupled validation filters to protect all downstream microservices.</span>
+              </li>
+            </ul>
+
+            <div class="tech-tags">
+              <span class="tech-tag">ASP.NET Core Web API</span>
+              <span class="tech-tag">Dynamic Routing</span>
+              <span class="tech-tag">JWT</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">Multi-Tenancy</span>
+            </div>
+          </div>
+          <div class="case-card-visual">
+            <img src="images/auth_gateway_system.jpg" alt="Enterprise Multi-Tenant Authentication Gateway Dashboard UI" class="case-visual-img" loading="lazy" width="1280" height="720" />
+            <div class="visual-overlay"></div>
+          </div>
+        </article>
+
+        <!-- Case Study 3: Contract Labour Management System (CLMS) -->
+        <article class="case-card reveal delay-2">
+          <div class="case-card-body">
+            <div class="case-card-header">
+              <span class="case-org-badge">Emsphere Technologies • Workforce</span>
+              <span class="case-time-badge">Mahindra & Mahindra</span>
+            </div>
+            <h3 class="case-title">Contract Labour Management System (CLMS)</h3>
+            <p class="case-desc">
+              Built core modules of a comprehensive enterprise workforce platform for onboarding, requisition workflows, and manpower planning across large factory environments.
+            </p>
+
+            <div class="case-metrics-row">
+              <div class="metric-chip">
+                <span class="metric-chip-val">35%</span>
+                <span class="metric-chip-lbl">Faster Onboarding</span>
+              </div>
+              <div class="metric-chip">
+                <span class="metric-chip-val">Decoupled</span>
+                <span class="metric-chip-lbl">Repository Pattern</span>
+              </div>
+              <div class="metric-chip">
+                <span class="metric-chip-val">-20%</span>
+                <span class="metric-chip-lbl">Fewer Prod Tickets</span>
+              </div>
+            </div>
+
+            <ul class="case-highlights-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Cut employee onboarding time by roughly 35% through a multi-level configurable onboarding workflow in .NET Framework MVC.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Utilized the Repository Pattern to keep data access clean, highly testable, and decoupled from core business logic.</span>
+              </li>
+            </ul>
+
+            <div class="tech-tags">
+              <span class="tech-tag">ASP.NET MVC</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">Repository Pattern</span>
+              <span class="tech-tag">jQuery</span>
+              <span class="tech-tag">Bootstrap UI</span>
+            </div>
+          </div>
+          <div class="case-card-visual">
+            <img src="images/clms_enterprise_ui.jpg" alt="Contract Labour Management System (CLMS) Dashboard UI" class="case-visual-img" loading="lazy" width="1280" height="720" />
+            <div class="visual-overlay"></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Secondary Projects & Microservices Grid -->
+      <div class="secondary-projects-grid">
+        <!-- Punch Sync Service -->
+        <div class="sub-project-card reveal">
+          <div class="sub-card-media">
+            <img src="images/punch_sync_monitor.jpg" alt="Real-Time Punch Sync Service Monitor" loading="lazy" width="600" height="340" />
+          </div>
+          <div class="sub-card-content">
+            <div class="case-org-badge" style="width: fit-content; margin-bottom: 8px;">Event-Driven System</div>
+            <h4 class="sub-card-title">Real-Time Biometric Punch Sync Service</h4>
+            <p class="sub-card-desc">
+              Built an event-driven Windows Service synchronizing access control biometric records to client databases in real-time using a pub/sub pattern, eliminating batch delay bottlenecks.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">.NET Framework</span>
+              <span class="tech-tag">Pub/Sub</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">Windows Service</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shift-Based Email Notification -->
+        <div class="sub-project-card reveal delay-1">
+          <div class="sub-card-media">
+            <img src="images/punch_sync_monitor.jpg" alt="Shift-Based Email Notification Daemon" loading="lazy" width="600" height="340" />
+          </div>
+          <div class="sub-card-content">
+            <div class="case-org-badge" style="width: fit-content; margin-bottom: 8px;">Automated Daemon</div>
+            <h4 class="sub-card-title">Shift-Based Attendance Alert Daemon</h4>
+            <p class="sub-card-desc">
+              Automated attendance tracking for department heads, eliminating ~5 hours/week of manual monitoring by detecting shift timing events in real-time and triggering instant email alerts.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Windows Service</span>
+              <span class="tech-tag">ADO.NET</span>
+              <span class="tech-tag">SMTP</span>
+              <span class="tech-tag">Event-Driven</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- EAgroServices ERP -->
+        <div class="sub-project-card reveal delay-2">
+          <div class="sub-card-media">
+            <img src="images/agro_erp_dashboard.jpg" alt="EAgroServices ERP Dashboard" loading="lazy" width="600" height="340" />
+          </div>
+          <div class="sub-card-content">
+            <div class="case-org-badge" style="width: fit-content; margin-bottom: 8px;">Full Stack Portal</div>
+            <h4 class="sub-card-title">EAgroServices: Role-Based ERP Portal</h4>
+            <p class="sub-card-desc">
+              Full-stack agricultural ERP portal built in .NET Core Web API and Angular with MySQL backend. Featured role-based authorization, collection management, and reactive dashboards.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">.NET Core</span>
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">RxJS</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">JWT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive System Architecture Visualizer -->
+    <section class="section container" id="architecture">
+      <div class="section-header reveal">
+        <div class="section-tag">System Design & Mechanics</div>
+        <h2 class="section-title">Interactive Architecture Playground</h2>
+        <p class="section-subtitle">
+          Click through live system topologies to inspect request lifecycles, security barriers, and database routing logic.
+        </p>
+      </div>
+
+      <div class="architecture-container reveal">
+        <div class="architecture-tabs">
+          <button class="arch-tab-btn active" data-arch="auth">1. Multi-Tenant Auth Gateway</button>
+          <button class="arch-tab-btn" data-arch="loan">2. SBI Loan Microservice</button>
+          <button class="arch-tab-btn" data-arch="event">3. Event-Driven Real-Time Sync</button>
+        </div>
+
+        <div class="arch-visualizer">
+          <div class="arch-flow-diagram" id="archDiagram">
+            <!-- Rendered dynamically by script.js -->
+          </div>
+
+          <div class="arch-details-box">
+            <h4 class="arch-details-title" id="archDetailTitle">Multi-Tenant Authentication & Dynamic Routing Gateway</h4>
+            <p class="arch-details-desc" id="archDetailDesc">
+              Click on any node in the pipeline above to see detailed technical parameters, caching mechanisms, and data access protocols.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Timeline -->
+    <section class="section container" id="experience">
+      <div class="section-header reveal">
+        <div class="section-tag">Career Milestones</div>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">
+          Over 3 years of hands-on ownership across all phases of the software development lifecycle.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <!-- Role 1: Webito Infotech -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Dot Net Developer</h3>
+                <div class="timeline-company">Webito Infotech Private Limited — Navi Mumbai</div>
+                <div class="timeline-clients">Enterprise Clients: <strong>State Bank of India (SBI, HRMS Dept)</strong>, <strong>Reliance Industries Limited</strong></div>
+              </div>
+              <span class="timeline-badge">Nov 2025 – Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Architected a Loan Management & Employee Life Cycle module from the ground up using .NET Core, Microservices, and SQL Server, digitizing workflows for <strong>1 lakh+ employees</strong> and roughly <strong>3,000 loan applications processed per month</strong>.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Engineered API integrations connecting internal loan workflows to external review and submission systems, cutting application turnaround time by roughly <strong>30%</strong> via multi-level approval routing.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Strengthened data security for APIs handling sensitive employee records, passing Information Security Department (ISD) audits with <strong>zero repeat critical findings</strong> through end-to-end encryption/decryption protocols.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Cut unhandled failures in production by roughly <strong>25%</strong> for third-party API integrations by designing structured test cases and comprehensive success/failure logging.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Optimized SQL Server database performance, reducing average query execution time by roughly <strong>40% (from ~5s to ~3s on key reports)</strong> via normalization and denormalization tailored to access patterns.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Resolved <strong>15+ critical vulnerabilities and production bugs</strong> flagged during strict ISD testing, taking full ownership of debugging and writing complex stored procedures.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Role 2: Emsphere Technologies -->
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineer</h3>
+                <div class="timeline-company">Emsphere Technologies Private Limited — Pune</div>
+                <div class="timeline-clients">Enterprise Clients: <strong>Mahindra and Mahindra</strong>, <strong>Nayara Energy</strong></div>
+              </div>
+              <span class="timeline-badge">Nov 2023 – Nov 2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Built core modules of a Contract Labour Management System (CLMS), cutting employee onboarding time by roughly <strong>35%</strong> by designing a multi-level configurable onboarding workflow in .NET Framework MVC with Repository Pattern.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Engineered a centralized Authentication Gateway in .NET Core powering a single unified mobile app for <strong>10+ enterprise clients</strong>, dynamically routing each client from a shared routing DB to their dedicated server.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Automated attendance tracking for department heads, eliminating ~<strong>5 hours/week</strong> of manual monitoring per department by building an event-driven Windows Service detecting shift-timing in real-time.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Improved backend data processing speed for enterprise workloads by roughly <strong>30%</strong> through SQL Server query optimization and backend logic refactoring.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Maintained and enhanced production enterprise applications, cutting reopened tickets by roughly <strong>20%</strong> across .NET Framework MVC / SQL Server / jQuery architecture.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Role 3: Transflower Learning -->
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineer Intern</h3>
+                <div class="timeline-company">Transflower Learning — Pune</div>
+                <div class="timeline-clients">Full Stack .NET & Angular Portal</div>
+              </div>
+              <span class="timeline-badge">Nov 2022 – Nov 2023</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Built full-stack features in .NET Core Web API and Angular with MySQL backend for ERP workflows.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span>Developed reusable Angular UI components and role-based access dashboards for farmers and collection managers.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Bento Grid -->
+    <section class="section container" id="skills">
+      <div class="section-header reveal">
+        <div class="section-tag">Technical Competencies</div>
+        <h2 class="section-title">Skills & Architecture Matrix</h2>
+        <p class="section-subtitle">
+          Curated across distributed systems, modern front-end frameworks, high-throughput databases, and cloud engineering.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="skills-filter-nav reveal">
+        <button class="skill-tab-btn active" data-filter="all">All Domains</button>
+        <button class="skill-tab-btn" data-filter="backend">Backend & .NET</button>
+        <button class="skill-tab-btn" data-filter="frontend">Frontend & Angular</button>
+        <button class="skill-tab-btn" data-filter="database">Databases & ORM</button>
+        <button class="skill-tab-btn" data-filter="cloud">Cloud, DevOps & Tools</button>
+      </div>
+
+      <div class="skills-bento-grid reveal">
+        <!-- Card 1: Backend -->
+        <div class="bento-skill-card" data-category="backend">
+          <div class="bento-skill-header">
+            <div class="bento-icon">⚙️</div>
+            <h3 class="bento-skill-title">.NET & Backend Ecosystem</h3>
+          </div>
+          <div class="bento-pills">
+            <span class="skill-pill">C#</span>
+            <span class="skill-pill">.NET Core (6/7/8)</span>
+            <span class="skill-pill">ASP.NET Web API</span>
+            <span class="skill-pill">ASP.NET MVC</span>
+            <span class="skill-pill">Microservices</span>
+            <span class="skill-pill">Node.js / NestJS</span>
+            <span class="skill-pill">SignalR</span>
+            <span class="skill-pill">Windows Services</span>
+            <span class="skill-pill">LINQ</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">VB.NET</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Frontend -->
+        <div class="bento-skill-card" data-category="frontend">
+          <div class="bento-skill-header">
+            <div class="bento-icon">🎨</div>
+            <h3 class="bento-skill-title">Frontend & UI Engineering</h3>
+          </div>
+          <div class="bento-pills">
+            <span class="skill-pill">Angular</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">RxJS</span>
+            <span class="skill-pill">NgRx</span>
+            <span class="skill-pill">JavaScript (ES6+)</span>
+            <span class="skill-pill">HTML5 / CSS3</span>
+            <span class="skill-pill">Responsive Design</span>
+            <span class="skill-pill">jQuery & AJAX</span>
+            <span class="skill-pill">State Management</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Databases -->
+        <div class="bento-skill-card" data-category="database">
+          <div class="bento-skill-header">
+            <div class="bento-icon">💾</div>
+            <h3 class="bento-skill-title">Databases & Performance Tuning</h3>
+          </div>
+          <div class="bento-pills">
+            <span class="skill-pill">SQL Server</span>
+            <span class="skill-pill">T-SQL</span>
+            <span class="skill-pill">Stored Procedures</span>
+            <span class="skill-pill">Triggers & Functions</span>
+            <span class="skill-pill">Entity Framework Core</span>
+            <span class="skill-pill">ADO.NET</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">Query Optimization</span>
+            <span class="skill-pill">Schema Normalization</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Architecture & Patterns -->
+        <div class="bento-skill-card" data-category="backend">
+          <div class="bento-skill-header">
+            <div class="bento-icon">🏛️</div>
+            <h3 class="bento-skill-title">Architecture & Security</h3>
+          </div>
+          <div class="bento-pills">
+            <span class="skill-pill">Clean Architecture</span>
+            <span class="skill-pill">Repository Pattern</span>
+            <span class="skill-pill">Event-Driven Architecture</span>
+            <span class="skill-pill">Pub/Sub Pattern</span>
+            <span class="skill-pill">SOLID Principles</span>
+            <span class="skill-pill">JWT & Token Auth</span>
+            <span class="skill-pill">AES Data Encryption</span>
+            <span class="skill-pill">ISD Audit Hardening</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Cloud & DevOps -->
+        <div class="bento-skill-card" data-category="cloud">
+          <div class="bento-skill-header">
+            <div class="bento-icon">☁️</div>
+            <h3 class="bento-skill-title">Cloud & DevOps</h3>
+          </div>
+          <div class="bento-pills">
+            <span class="skill-pill">Docker (Fundamentals)</span>
+            <span class="skill-pill">AWS EC2 & Lightsail</span>
+            <span class="skill-pill">GitHub Actions CI/CD</span>
+            <span class="skill-pill">Git & GitHub</span>
+            <span class="skill-pill">IIS Deployment</span>
+          </div>
+        </div>
+
+        <!-- Card 6: Tools & Testing -->
+        <div class="bento-skill-card" data-category="cloud">
+          <div class="bento-skill-header">
+            <div class="bento-icon">🧪</div>
+            <h3 class="bento-skill-title">Testing & Developer Tooling</h3>
+          </div>
+          <div class="bento-pills">
+            <span class="skill-pill">Postman</span>
+            <span class="skill-pill">Swagger / OpenAPI</span>
+            <span class="skill-pill">xUnit</span>
+            <span class="skill-pill">NUnit</span>
+            <span class="skill-pill">Visual Studio / VS Code</span>
+            <span class="skill-pill">Agile / Scrum</span>
+            <span class="skill-pill">GitHub Copilot</span>
+            <span class="skill-pill">Antigravity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section container">
+      <div class="section-header reveal">
+        <div class="section-tag">Academic Background</div>
+        <h2 class="section-title">Education & Languages</h2>
+      </div>
+
+      <div class="education-card reveal">
+        <div class="edu-info">
+          <h3>Bachelor of Computer Science (BCS)</h3>
+          <p>Savitribai Phule Pune University, Pune, Maharashtra</p>
+          <p style="margin-top: 6px; font-size: 0.88rem; color: var(--text-muted);">
+            Strong foundation in software engineering, object-oriented programming, data structures, algorithms, and relational database management.
+          </p>
+        </div>
+        <div class="edu-meta">
+          <div>2019 – 2022</div>
+          <div style="margin-top: 6px; color: var(--text-secondary);">Languages: <strong>English, Hindi, Marathi</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Developer Console / Contact Hub -->
+    <section class="section container" id="contact">
+      <div class="contact-console reveal">
+        <div class="console-topbar">
+          <div class="terminal-dots">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-muted);">
+            connect.sh --target=abhay-navale
+          </span>
+          <span style="font-size: 0.72rem; color: var(--accent-emerald);">● ONLINE</span>
+        </div>
+
+        <div class="console-body">
+          <div>
+            <h2 class="console-heading">Let's build reliable, high-scale software together.</h2>
+            <p class="console-sub">
+              Interested in discussing a .NET / Angular full-stack role, system architecture consulting, or high-scale engineering challenges? Feel free to reach out directly.
+            </p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="mailto:navale.abhay12@gmail.com" class="btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Send Email</span>
+              </a>
+              <a href="AbhayNavale_Resume.pdf" download class="btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Download PDF</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-quick-grid">
+            <a href="mailto:navale.abhay12@gmail.com" class="contact-tile" data-copy-text="navale.abhay12@gmail.com">
+              <div class="contact-tile-icon">✉️</div>
+              <div class="contact-tile-meta">
+                <span class="contact-tile-lbl">Direct Email (Click to Copy)</span>
+                <span class="contact-tile-val">navale.abhay12@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="tel:+919075966080" class="contact-tile">
+              <div class="contact-tile-icon">📞</div>
+              <div class="contact-tile-meta">
+                <span class="contact-tile-lbl">Phone</span>
+                <span class="contact-tile-val">+91 9075966080</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/navale-abhay" target="_blank" rel="noopener noreferrer" class="contact-tile">
+              <div class="contact-tile-icon">🔗</div>
+              <div class="contact-tile-meta">
+                <span class="contact-tile-lbl">LinkedIn</span>
+                <span class="contact-tile-val">linkedin.com/in/navale-abhay</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/NavaleAbhay" target="_blank" rel="noopener noreferrer" class="contact-tile">
+              <div class="contact-tile-icon">💻</div>
+              <div class="contact-tile-meta">
+                <span class="contact-tile-lbl">GitHub</span>
+                <span class="contact-tile-val">github.com/NavaleAbhay</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="container site-footer">
+    <div>© 2026 Abhay Navale • Designed & Built with Modern CSS, .NET Mindset & Pure Vanilla JavaScript</div>
+    <div class="footer-nav">
+      <a href="#overview">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Feedback -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite"></div>
+
+  <!-- Interactive JavaScript Engine -->
+  <script src="script.js"></script>
 </body>
 </html>
