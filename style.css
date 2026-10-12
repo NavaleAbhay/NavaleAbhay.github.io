@@ -358,6 +358,39 @@ img {
   box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
 }
 
+.btn-live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 7px;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: #93c5fd;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn-live-link:hover {
+  background: rgba(59, 130, 246, 0.25);
+  border-color: var(--accent-blue);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+}
+
+.live-indicator {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
 /* Mobile Toggle Hamburger */
 .mobile-toggle {
   display: none;

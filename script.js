@@ -235,6 +235,16 @@ function initArchitecturePlayground() {
         { icon: "🧮", title: "Tolerance Engine", tag: "T-SQL / ADO.NET", desc: "Evaluates grace periods, shifts, and overtimes" },
         { icon: "📧", title: "Alert Dispatcher", tag: "SignalR & SMTP", desc: "Pushes real-time dashboard updates & manager emails" }
       ]
+    },
+    offline: {
+      title: "DairyOps: 100% Offline-First PWA & Resilient Sync Pipeline",
+      description: "Mission-critical architecture for rural dairy collection centers operating under zero or intermittent internet connectivity. Captures automated FAT/SNF analyzer data locally into IndexedDB and Dexie.js, executing farmer billing offline and syncing idempotently with cloud endpoints upon network recovery.",
+      nodes: [
+        { icon: "🧪", title: "Testing Hardware", tag: "FAT / SNF Analyzers", desc: "Automated milk quality testing equipment and digital weigh scales" },
+        { icon: "💾", title: "Local Client Store", tag: "IndexedDB & Dexie.js", desc: "Zero-latency local persistence ensuring 100% offline uptime" },
+        { icon: "🔄", title: "Sync Worker", tag: "Service Worker PWA", desc: "Background queue with conflict resolution and cryptographic receipts" },
+        { icon: "☁️", title: "Cloud ERP & Payouts", tag: ".NET Core / Bank Gateway", desc: "Centralized cooperative ledger and automated bank disbursement" }
+      ]
     }
   };
 
